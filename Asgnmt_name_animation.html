@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+     div.circle {
+         width:100px;
+         height:100px;
+         background-color:teal;
+         border-radius: 50px;
+         animation-name: circle;
+         animation-duration: 2s;
+         animation-timing-function: cubic-bezier(.83,.35,.89,.49);
+         animation-iteration-count: infinite;
+         animation-play-state: running;
+         /* animation-direction: reverse; */
+         animation-delay: 0s;
+         position: relative;
+     }
+     @keyframes circle {
+         0%{top:0px;left:0px;}
+         50%{top:200px;left:200px;background-color:tomato}
+         75%{top:0px;left:400px;background-color:springgreen}
+         100%{top:0px;left:400px;}
+     }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    
+</body>
+</html>
